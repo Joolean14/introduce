@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+.intro-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.info-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-pane {
+    width: 40vw;
+}
+
+.right-pane {
+    width: 60vw;
+    background-color: white;
+}
+
+.left-pane-txt {
+    color: white;
+}
+
+.footer-page {
+    background-color: #C4C4C4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.btn {
+    border: 1px black solid;
+    padding: 2vw;
+    width: 10vw;
+    text-align: center;
+    cursor: pointer;
+}
