@@ -1,46 +1,98 @@
 body {
-    background-color: black;
+  background-color: black;
+  padding: 0;
+}
+
+.gray {
+  background-color: #c4c4c4;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
-    color: white;
+  color: white;
 }
 
 .intro-page {
-    width: 100vw;
-    height: 100vh;
+}
+
+.logo-container {
+  width: 100vw;
+  height: 30vh;
+  padding-left: 3vw;
+  display: flex;
+}
+
+.main-info-container {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 3vw;
 }
 
 .info-page {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .left-pane {
-    width: 40vw;
+  width: 40vw;
+  padding: 3vw 3vw;
 }
 
 .right-pane {
-    width: 60vw;
-    background-color: white;
+  width: 60vw;
+  background-color: white;
+  padding: 3vw 3vw;
 }
 
 .left-pane-txt {
-    color: white;
+  color: white;
+}
+
+.gray-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  width: 33.3vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.gray-col-1 {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.gray-col-2 {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gray-col-3 {
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .footer-page {
-    background-color: #C4C4C4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
- 
+
 .btn {
-    border: 1px black solid;
-    padding: 2vw;
-    width: 10vw;
-    text-align: center;
-    cursor: pointer;
+  border: 1px black solid;
+  padding: 2vw;
+  width: 10vw;
+  text-align: center;
+  cursor: pointer;
 }
