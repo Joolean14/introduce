@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   background-color: black;
   padding: 0;
 }
@@ -17,6 +18,12 @@ h1 {
   text-align: right;
 }
 
+p,
+ul,
+li {
+  font-size: 1.2vw;
+}
+
 .white-txt {
   color: white;
 }
@@ -24,7 +31,6 @@ h1 {
 .logo {
   width: 20vw;
   /* border: 1px red solid; */
-
 }
 
 .back-arrow {
@@ -65,7 +71,7 @@ h1 {
 
 .left-pane {
   width: 40vw;
-  padding: 3vw 3vw;
+  padding: 3vw;
   text-align: right;
 }
 
@@ -86,13 +92,12 @@ h1 {
 }
 
 .left-gray-col {
-  padding-left: 4vw;
+  padding: 8vh 0 12vh 4vw;
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
-  justify-content: space-evenly;
+  align-items: flex-start;
+  justify-content: space-between;
   width: 50vw;
-
 }
 
 .right-gray-col {
@@ -104,6 +109,7 @@ h1 {
 }
 
 .notes {
+  margin: 5vh 0 5vh 0;
   opacity: 0.4;
 }
 
@@ -157,10 +163,80 @@ h1 {
 }
 
 .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border: 1px black solid;
   padding: 1vw;
   width: 17vw;
   height: 10vh;
   text-align: center;
   cursor: pointer;
+}
+.gray-page-mobile {
+  display: none;
+}
+
+.align-self-left {
+  align-self:flex-start;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 40vw;
+    /* border: 1px red solid; */
+  }
+
+  .logo-cocrea {
+    width: 40vw;
+  }
+
+  .back-arrow {
+    width: 6vw;
+    height: 6vw;
+    /* border: 1px red solid; */
+    /* margin-top: 9vh; */
+  }
+
+  .left-pane-txt {
+    font-size: 2.5vw;
+  }
+
+  p,
+  ul,
+  li {
+    font-size: 3vw;
+  }
+
+  .left-pane {
+    text-align: center;
+    width: 20vw;
+    padding: 1vw;
+  }
+
+  .right-pane {
+    width: 80vw;
+    padding: 5vw;
+  }
+
+  .gray-page, .footer-page {
+    display: none;
+  }
+  .gray-page-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 8vw;
+  }
+
+  .number {
+    font-size: 7vw;
+  }
+
+  .btn {
+    width: 50vw;
+    height: 8vh;
+  }
 }
