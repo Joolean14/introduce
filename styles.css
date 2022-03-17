@@ -4,6 +4,13 @@ body {
   padding: 0;
 }
 
+a {
+  font-size: 1.2vw;
+  color: black;
+  margin-top: 2vw;
+  text-decoration: none;
+}
+
 .gray {
   background-color: #c4c4c4;
 }
@@ -183,6 +190,11 @@ li {
 }
 
 @media only screen and (max-width: 600px) {
+
+  a {
+    font-size: 2.8vw;
+  }
+
   .logo {
     width: 40vw;
     /* border: 1px red solid; */
